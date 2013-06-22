@@ -1,1 +1,10 @@
-$('#qrcodeCanvas').qrcode("102938012983019283019823091820398123");
+$(function () {
+	$('#qrcodeCanvas').qrcode("alskdjflaksdjflkasjdflkjasldkfjalkjdfklj");
+
+	$('#wallet-public-key').on('blur', function(){
+		//should probably verify key before - whatever
+		$('#qrcodeCanvas').html('');
+		$('#qrcodeCanvas').qrcode($(this).val());
+
+	});	
+})

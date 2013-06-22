@@ -31,31 +31,40 @@
   </head>
   <body>
     <div data-role="page">
-    <div data-role="panel" id="defaultpanel">
-      <div class="panel-content">
-        <h3>Default panel options</h3>
-        <p>This panel has all the default options: positioned on the left with the reveal display mode. The panel markup is <em>before</em> the header, content and footer in the source order.</p>
-        <p>To close, click off the panel, swipe left or right, hit the Esc key, or use the button below:</p>
-        <a href="#demo-links" data-rel="close" data-role="button" data-theme="c" data-icon="delete" data-inline="true">Close panel</a>
-      </div><!-- /content wrapper for padding -->
+      <div data-role="panel" id="defaultpanel">
+        <div class="panel-content">
+          <h3>Default panel options</h3>
+          <p>This panel has all the default options: positioned on the left with the reveal display mode. The panel markup is <em>before</em> the header, content and footer in the source order.</p>
+          <p>To close, click off the panel, swipe left or right, hit the Esc key, or use the button below:</p>
+          <a href="#demo-links" data-rel="close" data-role="button" data-theme="c" data-icon="delete" data-inline="true">Close panel</a>
+        </div>
+      </div>
+
+      <div data-role="header">
+        <a data-iconpos="notext" href="#defaultpanel" data-role="button" data-icon="flat-menu"></a>
+        <h1>Bitcoin Favor</h1>
+        <a data-iconpos="notext" href="#rightpanel" data-role="button" data-icon="flat-man"></a>
+      </div>
+
+      <div data-role="content">
+        <ul data-role="listview" data-inset="true">
+          <li data-role="list-divider" data-theme="a">Your Wallet</li>
+          <li id="qrcodeCanvas"></li>
+        </ul>
+      </div> 
+
+      <div data-role="footer"> 
+        <h4>© 2013 Josh Stickles</h4> 
+      </div>
+
+      <div data-role="panel" data-position="right" id="rightpanel">
+        <div class="panel-content">
+          <h3>Enter your wallet info</h3>
+          <input id="wallet-public-key" type="text" placeholder="Wallet Public Key" />
+          <a href="#demo-links" data-rel="close" data-role="button" data-theme="c" data-icon="delete" data-inline="true">Close panel</a>
+        </div>
+      </div> 
     </div>
-    <div data-role="header">
-      <a data-iconpos="notext" href="#defaultpanel" data-role="button" data-icon="flat-menu"></a>
-      <h1>Bitcoin Favor</h1>
-      <a data-iconpos="notext" href="#rightpanel" data-role="button" data-icon="flat-man"></a>
-    </div>
-    <div data-role="content">
-      <ul data-role="listview" data-inset="true">
-        <li data-role="list-divider" data-theme="a">Your Wallet</li>
-        <li id="qrcodeCanvas"></li>
-      </ul>
-     <!--  <div id="qrcodeCanvas"></div>  -->
-    </div> 
-    
-    <div data-role="footer"> 
-      <h4>© 2013 Josh Stickles</h4> 
-    </div> 
-  </div>
 
     <script type="text/javascript" src="js/jquery-1.9.1.js"></script>
     <script type="text/javascript" src="js/jquery.mobile-1.3.1.js"></script>

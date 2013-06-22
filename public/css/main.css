@@ -36,3 +36,13 @@
 textarea {
 	height: 200px !important;
 }
+
+#preview {
+	width: 258px;
+	overflow: hidden;
+	overflow-x:scroll;
+}
+
+.ui-icon-arrow-r {
+	background-color: #BADBAD !important;
+}

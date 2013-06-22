@@ -38,9 +38,14 @@ textarea {
 }
 
 #preview {
-	width: 258px;
+	max-height:258px;
+	max-width: 258px;
 	overflow: hidden;
 	overflow-x:scroll;
+}
+
+#preview > span > img {
+	max-width:258px;
 }
 
 .ui-icon-arrow-r {

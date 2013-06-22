@@ -22,3 +22,16 @@
 	border: 1px solid #CEADDB !important;
 	background: #CEADDB !important;
 }
+
+.ui-btn-up-d {
+	border: 1px solid #BADBAD !important;
+	background: #BADBAD !important;
+}
+
+.ui-btn-up-d > .ui-btn-inner > .ui-btn-text > a {
+	color: #58B69B;
+}
+
+textarea {
+	height: 200px !important;
+}

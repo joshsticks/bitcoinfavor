@@ -1,6 +1,8 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    bitcoin-3rd-party-apis (0.3.2)
+    json (1.8.0)
     rack (1.5.2)
     rack-protection (1.5.0)
       rack
@@ -14,4 +16,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bitcoin-3rd-party-apis
+  json
   sinatra

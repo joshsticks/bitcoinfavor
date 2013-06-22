@@ -59,6 +59,8 @@ $(function () {
 
   if(window.navigator.standalone == false) {
   	$.mobile.changePage("#landing-page");
+  } else if ( window.navigator.standalone == true && location.hash == "#landing-page") {
+  	$.mobile.changePage("#home-page");
   }
 
 });

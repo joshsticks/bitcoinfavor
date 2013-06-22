@@ -35,14 +35,19 @@ $(function () {
 
 	var inputElement = document.getElementById("mypic");
 	inputElement.addEventListener("change", handleFiles, false);
+	function read(a)
+	{
+		$('#to-address').html('<p>' +a+'</p>');
+	}
 	function handleFiles() {
 		var fileList = this.files; /* now you can work with the file list */
 		var f = fileList[0];
 		var reader = new FileReader();
-
+		qrcode.callback = read;
 		reader.onload = (function(theFile) {
 			return function(e) {
           // Render thumbnail.
+          qrcode.decode(e.target.result);
           var span = document.createElement('span');
           span.innerHTML = ['<img class="thumb" src="', e.target.result,
           '" title="', escape(theFile.name), '"/>'].join('');

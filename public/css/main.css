@@ -1,4 +1,24 @@
-.ui-bar-a {
-	border: 1px solid #9B59B6;
-	background: #9B59B6;
+.ui-bar-a, .ui-btn {
+	border: 1px solid #9B59B6 !important;
+	background: #9B59B6 !important;
+}
+
+.ui-btn-up-b {
+	background: #58B66D;
+	border: 1px solid #58B66D;
+}
+
+.ui-btn-down-b {
+	background: #58B66D;
+	border: 1px solid #58B66D;
+}
+
+.ui-li-divider {
+	border: 1px solid #58B69B !important;
+	background: #58B69B !important;
+}
+
+.ui-footer {
+	border: 1px solid #CEADDB !important;
+	background: #CEADDB !important;
 }

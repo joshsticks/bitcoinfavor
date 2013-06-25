@@ -61,11 +61,14 @@ $(function () {
       reader.readAsDataURL(f);
 
   }
-
-  if(window.navigator.standalone == false) {
-  	$.mobile.changePage("#landing-page");
-  } else if ( window.navigator.standalone == true && location.hash == "#landing-page") {
-  	$.mobile.changePage("#home-page");
-  }
+  if("standalone" in window.navigator) {
+	  if(window.navigator.standalone == false) {
+	  	$.mobile.changePage("#landing-page");
+	  } else if ( window.navigator.standalone == true && location.hash == "#landing-page") {
+	  	$.mobile.changePage("#home-page");
+	  }	
+	} else {
+		$.mobile.changePage("#not-mobile-page");
+	}
 
 });

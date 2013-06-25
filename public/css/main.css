@@ -55,3 +55,7 @@ textarea {
 #to-address > p {
 	word-break: break-all;
 }
+
+#footer > h4 > a {
+	color: white !important;
+}
